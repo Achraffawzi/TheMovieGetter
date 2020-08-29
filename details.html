@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+    <script src="https://kit.fontawesome.com/3cfea9a482.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="index.html" class="header__anchor">
+            <span class="header__logoText">GetMovieInfo</span>
+            <i class="fas fa-video header__icon"></i>
+        </a>
+    </header>
+
+    <!-- displaying the movie details here -->
+    <section class="details">
+        <img src="" alt="" class="details__movieImage" id="detailsImage">
+        <div class="details__info">
+            <h1 class="details__movieName" id="movieName"></h1>
+            <ul class="details__ul">
+                <li>Popularity: <span id="popularity"></span></li>
+                <li>Total Votes: <span id="totalVotes"></span></li>
+                <li>Original Language: <span id="originalLanguage"></span></li>
+                <li>Vote Average: <span id="voteAverage"></span></li>
+                <li>Released date: <span id="releasedDate"></span></li>
+                <li>Description: <span id="description"></span></li>
+            </ul>
+            <a href="index.html" class="details__backHome">Back to search</a>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script>
+        getMovie();
+    </script>
+</body>
+</html>
